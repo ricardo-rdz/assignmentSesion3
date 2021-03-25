@@ -1,26 +1,26 @@
 {
   "aggregate": {
-    "timestamp": "2021-03-25T03:52:12.262Z",
+    "timestamp": "2021-03-25T04:36:41.270Z",
     "scenariosCreated": 1,
     "scenariosCompleted": 1,
     "requestsCompleted": 7,
     "latency": {
-      "min": 224.5,
-      "max": 417.9,
-      "median": 395.3,
-      "p95": 417.9,
-      "p99": 417.9
+      "min": 269.6,
+      "max": 1289.8,
+      "median": 414.6,
+      "p95": 1289.8,
+      "p99": 1289.8
     },
     "rps": {
       "count": 7,
-      "mean": 2.33
+      "mean": 1.75
     },
     "scenarioDuration": {
-      "min": 2604.3,
-      "max": 2604.3,
-      "median": 2604.3,
-      "p95": 2604.3,
-      "p99": 2604.3
+      "min": 3799.9,
+      "max": 3799.9,
+      "median": 3799.9,
+      "p95": 3799.9,
+      "p99": 3799.9
     },
     "scenarioCounts": {
       "0": 1
@@ -38,33 +38,33 @@
       {
         "duration": 1,
         "arrivalRate": 1,
-        "name": "test"
+        "name": "test Artillery"
       }
     ]
   },
   "intermediate": [
     {
-      "timestamp": "2021-03-25T03:52:12.258Z",
+      "timestamp": "2021-03-25T04:36:41.264Z",
       "scenariosCreated": 1,
       "scenariosCompleted": 1,
       "requestsCompleted": 7,
       "latency": {
-        "min": 224.5,
-        "max": 417.9,
-        "median": 395.3,
-        "p95": 417.9,
-        "p99": 417.9
+        "min": 269.6,
+        "max": 1289.8,
+        "median": 414.6,
+        "p95": 1289.8,
+        "p99": 1289.8
       },
       "rps": {
         "count": 7,
-        "mean": 2.33
+        "mean": 1.75
       },
       "scenarioDuration": {
-        "min": 2604.3,
-        "max": 2604.3,
-        "median": 2604.3,
-        "p95": 2604.3,
-        "p99": 2604.3
+        "min": 3799.9,
+        "max": 3799.9,
+        "median": 3799.9,
+        "p95": 3799.9,
+        "p99": 3799.9
       },
       "scenarioCounts": {
         "0": 1
@@ -76,13 +76,13 @@
       },
       "matches": 0,
       "latencies": [
-        416449500,
-        320056900,
-        224547300,
-        338820500,
-        417930900,
-        395267300,
-        417150000
+        269564100,
+        1289768800,
+        373675600,
+        286023300,
+        414592500,
+        469718500,
+        609846000
       ],
       "customStats": {},
       "counters": {},

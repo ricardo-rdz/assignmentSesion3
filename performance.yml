@@ -3,12 +3,12 @@ config:
   phases:
     - duration: 1
       arrivalRate: 1
-      name: "test"
+      name: "test Artillery"
   defaults:
    headers:
      authorization: Bearer {{ $processEnvironment.TOKEN }}
      content-type: application/json
-    ##processor: "./myProcessor.js"
+  #processor: "./myProcessor.js"
 scenarios:
   - flow:
         #get Active tasks
@@ -23,7 +23,7 @@ scenarios:
            json: "$.id"
            as: "idTask"
       - log: "current ID is {{idTask}}"
-        #get task created
+      #get task created
       - get: 
           url: "/tasks/{{idTask}}"
         # Update a task
