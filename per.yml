@@ -1,0 +1,17 @@
+config:
+  target: "https://api.todoist.com/rest/v1"
+  phases:
+    - duration: 1
+      arrivalRate: 1
+      name: "Phase 1"
+  defaults:
+   headers:
+     Authorization: Bearer {{ $processEnvironment.TOKEN }}
+     Content-Type: application/json  
+  ##processor: "./myProcessor.js"
+scenarios:
+  - flow:
+    - get:
+       url: "/tasks"
+  # For more information: https//artillery.io/docs/script-reference/
+# For more information: https//artillery.io/docs/script-reference/

@@ -1,0 +1,25 @@
+config:
+  target: "https://api.todoist.com/rest/v1" 
+  phases:
+    - duration: 1
+      arrivalRate: 1
+      name: "test"
+  defaults:
+   headers:
+     authorization: Bearer {{ $processEnvironment.TOKEN }}
+     content-type: application/json
+    ##processor: "./myProcessor.js"
+scenarios:
+  - flow:
+      - get:
+          url: "/tasks"
+      - post:
+          url: "/tasks"
+          json:
+           content: "test1"
+          capture:
+           json: "$.id"
+           as: "idTask"
+      - log: "current ID is {{idTask}}"
+# For more information: https://artillery.io/docs/script-reference/
+    # Scenario definitions would go here.
