@@ -4,7 +4,7 @@
   "description": "performance testing",
   "main": "index.js",
   "scripts": {
-    "test": "artillery run --output results/report.json per.yml && artillery report --output results/report.html results/report.json"
+    "test": "artillery run --output results/report.json performance.yml && artillery report --output results/report.html results/report.json"
   },
   "author": "Ricardo Rodriguez Romero",
   "license": "ISC",

@@ -11,8 +11,10 @@ config:
     ##processor: "./myProcessor.js"
 scenarios:
   - flow:
+        #get Active tasks
       - get:
           url: "/tasks"
+        #create a new task
       - post:
           url: "/tasks"
           json:
@@ -21,5 +23,22 @@ scenarios:
            json: "$.id"
            as: "idTask"
       - log: "current ID is {{idTask}}"
+        #get task created
+      - get: 
+          url: "/tasks/{{idTask}}"
+        # Update a task
+      - post:
+          url: "/tasks/{{idTask}}"
+          json:
+           content: "testUpdated"
+        #Change task status to Complete
+      - post:
+          url: "/tasks/{{idTask}}/close"
+        #Reopen a task 
+      - post:
+          url: "/tasks/{{idTask}}/reopen" 
+        #Delete a Task
+      - delete:
+          url: "/tasks/{{idTask}}"
 # For more information: https://artillery.io/docs/script-reference/
     # Scenario definitions would go here.
